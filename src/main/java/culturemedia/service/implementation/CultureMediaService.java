@@ -11,7 +11,5 @@ public interface CultureMediaService {
 
     List<Video> findAll() throws VideoNotFoundException;
 
-    List<Video> find(String tittle) throws VideoNotFoundException;
-
     List<Video> find(Double fromDuration, Double toDuration) throws VideoNotFoundException;
 }

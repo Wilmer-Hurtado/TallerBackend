@@ -1,7 +1,6 @@
 package culturemedia.repository;
 
 import culturemedia.model.Video;
-import culturemedia.repository.implem.VideoRepositoryImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
