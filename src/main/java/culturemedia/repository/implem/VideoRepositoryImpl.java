@@ -5,7 +5,7 @@ import culturemedia.repository.VideoRepository;
 import culturemedia.model.Video;
 
 
-public class VideoRepositoryImpl implements VideoRepository {
+public abstract class VideoRepositoryImpl implements VideoRepository {
     private final List<Video> videos;
 
     public VideoRepositoryImpl() {
@@ -21,16 +21,6 @@ public class VideoRepositoryImpl implements VideoRepository {
     public Video save(Video video) {
         this.videos.add( video );
         return video;
-    }
-
-    @Override
-    public List<Video> findByTitle(String title) {
-        return null;
-    }
-
-    @Override
-    public List<Video> findByDuration(Double fromDuration, Double toDuration) {
-        return null;
     }
 
 
